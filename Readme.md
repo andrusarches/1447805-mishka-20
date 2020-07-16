@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Шорников](https://up.htmlacademy.ru/adaptive/20/user/1447805).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/htmlcss/28/user/39082).
 
 ---
 
