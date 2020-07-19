@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог магазина изделий ручной работы «Mishka»</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="source/mishka-logo-mobile.svg" alt="Логотип магазина изделий ручной работы «Mishka»" width="" height="">
+        </a>
+        <ul class="site-menu">
+          <li class="site-menu__element"><a href="catalog.html" class="site-menu__link">Каталог товаров</a></li>
+          <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Вязание на заказ</a></li>
+          <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Поиск по сайту</a></li>
+          <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Корзина: <span clas="site-menu__cart-item-number">пока пуста</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="item-catalog">
+        <h1 class="page-heading">Каталог товаров</h1>
+        <ul class="item-catalog__item-list">
+          <li>
+            <article>
+              <img src="img/placeholder.jpg" alt="Фотография товара - Зайчик-попрыгайчик">
+              <div>
+                <h3>Зайчик-попрыгайчик</h3>
+                <p>Рост 30 см, вес 200 г</p>
+              </div>
+              <div>
+                <p class="item-catalog__item-price"><span>1 200</span> руб.</p>
+                <a href="blank.html" class="button-to-cart" aria-label="Добавить товар в корзину"></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/placeholder.jpg" alt="Фотография товара - Корзинка для белья">
+              <div>
+                <h3>Корзинка для белья</h3>
+                <p>Диаметр 15 см, высота 10 см</p>
+              </div>
+              <div>
+                <p class="item-catalog__item-price"><span>690</span> руб.</p>
+                <a href="blank.html" class="button-to-cart" aria-label="Добавить товар в корзину"></a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <img src="img/placeholder.jpg" alt="Фотография товара - Большая корзинка для игрушек">
+              <div>
+                <h3>Большая корзинка для игрушек</h3>
+                <p>Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div>
+                <p class="item-catalog__item-price"><span>1 500</span> руб.</p>
+                <a href="blank.html" class="button-to-cart" aria-label="Добавить товар в корзину"></a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="manufacturing-process">
+        <h2 class="manufacturing-process__heading">Процесс производства</h2>
+        <video src="videofile.ogg" poster="img/posterimage.jpg"></video>
+        <p class="manufacturing-process__video-description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="blank.html" class="button-basic">Сделать заказ</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="social">
+        <h2 class="visually-hidden">Магазин изделий рукоделия «Мишка» в социальных сетях</h2>
+        <ul>
+          <li><a class="social__link" href="instagram.com" aria-label="Магазин «Мишка» в Инстаграме"><img src="img/icon-insta.svg" widht="" height="" alt="Логотип Instagram"></a></li>
+          <li><a class="social__link" href="facebook.com" aria-label="Магазин «Мишка» в Фейсбуке"><img src="img/icon-fb.svg" widht="" height="" alt="Логотип Facebook"></a></li>
+          <li><a class="social__link" href="twitter.com" aria-label="Магазин «Мишка» в Твиттере"><img src="img/icon-twitter.svg" widht="" height="" alt="Логотип Twitter"></a></li>
+        </ul>
+      </section>
+      <section class="html-academy-copyright">
+        <h2 class="visually-hidden">Копирайт HTML Academy</h2>
+        <p>Разработано:</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Переход на страницу интенсива HTML Academy" class="html-academy-copyright__link">
+          <img src="img/logo-html-academy.svg" alt="Логотип HTML Academy" class="html-academy-logo">
+        </a>
+      </section>
+    </footer>
+
+    <div class="pop-up-overlay"></div>
+    <section class="pop-up-item-into-cart">
+      <h2 class="pop-up-item-into-cart__heading">Добавить в корзину</h2>
+      <p>Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <ul class="pop-up-item-into-cart__size-selection-list">
+          <li><input class="pop-up-item-into-cart__size-selection-option" type="radio" name="item-size-selection" value="S" checked></li>
+          <li><input class="pop-up-item-into-cart__size-selection-option" type="radio" name="item-size-selection" value="M"></li>
+          <li><input class="pop-up-item-into-cart__size-selection-option" type="radio" name="item-size-selection" value="L"></li>
+        </ul>
+        <button type="submit" class="button-pop-up">Добавить</button>
+      </form>
+    </section>
+  </body>
+</html>
