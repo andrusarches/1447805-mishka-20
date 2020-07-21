@@ -7,36 +7,34 @@
   </head>
   <body>
     <header class="page-header">
-      <nav>
-        <a class="logo">
-          <img src="source/mishka-logo-mobile.svg" alt="Логотип магазина изделий ручной работы «Mishka»" width="" height="">
-        </a>
+      <a class="logo">
+        <img src="source/mishka-logo-mobile.svg" alt="Логотип магазина изделий ручной работы «Mishka»">
+      </a>
+      <nav class="site-navigation">
+        <a href="blank.html" class="hamburger-menu" aria-label="Меню магазина изделий ручной работы «Mishka»"></a>
         <ul class="site-menu">
           <li class="site-menu__element"><a href="catalog.html" class="site-menu__link">Каталог товаров</a></li>
           <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Вязание на заказ</a></li>
           <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Поиск по сайту</a></li>
-          <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Корзина: <span clas="site-menu__cart-item-number">пока пуста</span></a></li>
+          <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Корзина: <span class="site-menu__cart-item-number">пока пуста</span></a></li>
         </ul>
       </nav>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Главная страница сайта магазина товаров ручной работы «Мишка»</h1>
-      <section class="hero">
-        <h2 class="hero__slogan">Милые штуки ручной работы для дома</h2>
-      </section>
-      <section class="catalog-sections">
-        <h2 class="visually-hidden"></h2>
-        <ul class="catalog-sections__listlist">
-          <li class="catalog-sections__element"><a href="" class="catalog-sections__link">Предметы интерьера</a></li>
-          <li class="catalog-sections__element"><a href="" class="catalog-sections__link">Детские игрушки</a></li>
+      <section class="intro">
+        <h2 class="intro__title">Милые штуки ручной работы для дома</h2>
+        <ul class="intro__nav catalog-nav">
+          <li class="catalog-nav__item"><a href="blank.html" class="catalog-nav__link">Предметы интерьера</a></li>
+          <li class="catalog-nav__item"><a href="blank.html" class="catalog-nav__link">Детские игрушки</a></li>
         </ul>
       </section>
-      <section class="weekly-promo">
-        <h2 class="weekly-promo__item-name">Вязаные корзинки</h2>
-        <h3 class="weekly-promo__promo-name">ТОВАР НЕДЕЛИ</h3>
-        <p class="weekly-promo__item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="weekly-promo__item-features">
+      <section class="product-promo">
+        <h2 class="product-promo__item-name">Вязаные корзинки</h2>
+        <h3 class="product-promo__promo-name">ТОВАР НЕДЕЛИ</h3>
+        <p class="product-promo__item-description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="product-promo__item-features">
           <tr>
             <th>Цвет:</th>
             <td>«Тиффани»/серый</td>
@@ -50,46 +48,50 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img src="img/placeholder.jpg" alt="Фотография товара - вязаные корзинки" class="weekly-promo__item-image" height="315" width="260">
-        <p class="weekly-promo__item-price">Цена: <span>990</span> руб.</p>
-        <a href="blank.hrml" class="button-basic weekly-promo__button-order">ЗАКАЗАТЬ</a>
+        <img src="img/placeholder.jpg" alt="Фотография товара - вязаные корзинки" class="product-promo__item-image" height="315" width="260">
+        <p class="product-promo__item-price">Цена: <span>990</span> руб.</p>
+        <a href="blank.hrml" class="button-basic product-promo__button-order">ЗАКАЗАТЬ</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__heading">Коротко о нас</h2>
         <ul class="about-us__features-list">
           <li class="about-us__feature">
-            <p class="about-us__features-paragraph">Экологически чистые материалы</p>
+            <p class="about-us__features-text">Экологически чистые материалы</p>
           </li>
           <li class="about-us__feature">
-            <p class="about-us__features-paragraph">Скандинавский стиль по российской цене</p>
+            <p class="about-us__features-text">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about-us__feature">
-            <p class="about-us__features-paragraph">Увеличивает лайки на фотографиях</p>
+            <p class="about-us__features-text">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about-us__feature">
-            <p class="about-us__features-paragraph">Связано вручную с любовью и умилением</p>
+            <p class="about-us__features-text">Связано вручную с любовью и умилением</p>
           </li>
           <li class="about-us__feature">
-            <p class="about-us__features-paragraph">Поддержка отечественного производителя</p>
+            <p class="about-us__features-text">Поддержка отечественного производителя</p>
           </li>
           <li class="about-us__feature">
-            <p class="about-us__features-paragraph">Поставляется вподарочной упаковке</p>
+            <p class="about-us__features-text">Поставляется вподарочной упаковке</p>
           </li>
         </ul>
       </section>
       <section class="reviews">
         <h2 class="reviews__heading">Отзывы</h2>
-        <p class="reviews__paragraph">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набираютбольше лайков!</p>
-        <div class="reviews__author">
-          <h3 class="reviews__author-name">Анастасия Красильникова</h3>
-          <p class="reviews__author-contact">@misssssiskras</p>
-        </div>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набираютбольше лайков!</p>
+            <div class="reviews__author">
+              <h3 class="reviews__author-name">Анастасия Красильникова</h3>
+              <p class="reviews__author-contact">@misssssiskras</p>
+            </div>
+          </li>
+        </ul>
         <div class="reviews__navigation">
           <ul class="reviews__arrrows-list">
             <li><a href="blank.html" class="reviews__arrrow" aria-label="Предыдущий отзыв"></a></li>
             <li><a href="blank.html" class="reviews__arrrow" aria-label="Следующий отзыв"></a></li>
           </ul>
-          <a href="" class="reviews__review-submission">Написать</a>
+          <a href="blank.html" class="reviews__review-submission">Написать</a>
         </div>
       </section>
       <section class="contacts">
@@ -97,7 +99,7 @@
         <table class="contacts__table">
           <tr>
             <th>e-mail:</th>
-            <td>info@mimimishkashop.ru</td>
+            <td><a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
           </tr>
           <tr>
             <th>адрес:</th>
@@ -115,9 +117,9 @@
       <section class="social">
         <h2 class="visually-hidden">Магазин изделий рукоделия «Мишка» в социальных сетях</h2>
         <ul>
-          <li><a class="social__link" href="instagram.com" aria-label="Магазин «Мишка» в Инстаграме"><img src="img/icon-insta.svg" widht="" height="" alt="Логотип Instagram"></a></li>
-          <li><a class="social__link" href="facebook.com" aria-label="Магазин «Мишка» в Фейсбуке"><img src="img/icon-fb.svg" widht="" height="" alt="Логотип Facebook"></a></li>
-          <li><a class="social__link" href="twitter.com" aria-label="Магазин «Мишка» в Твиттере"><img src="img/icon-twitter.svg" widht="" height="" alt="Логотип Twitter"></a></li>
+          <li><a class="social__link" href="instagram.com" aria-label="Магазин «Мишка» в Инстаграме"><img src="img/icon-insta.svg" width="" height="" alt="Логотип Instagram"></a></li>
+          <li><a class="social__link" href="facebook.com" aria-label="Магазин «Мишка» в Фейсбуке"><img src="img/icon-fb.svg" width="" height="" alt="Логотип Facebook"></a></li>
+          <li><a class="social__link" href="twitter.com" aria-label="Магазин «Мишка» в Твиттере"><img src="img/icon-twitter.svg" width="" height="" alt="Логотип Twitter"></a></li>
         </ul>
       </section>
       <section class="html-academy-copyright">
@@ -130,14 +132,23 @@
     </footer>
 
     <div class="pop-up-overlay"></div>
-    <section class="pop-up-item-into-cart">
-      <h2 class="pop-up-item-into-cart__heading">Добавить в корзину</h2>
+    <section class="pop-up">
+      <h2 class="pop-up__heading">Добавить в корзину</h2>
       <p>Выберите размер:</p>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <ul class="pop-up-item-into-cart__size-selection-list">
-          <li><input class="pop-up-item-into-cart__size-selection-option" type="radio" name="item-size-selection" value="S" checked></li>
-          <li><input class="pop-up-item-into-cart__size-selection-option" type="radio" name="item-size-selection" value="M"></li>
-          <li><input class="pop-up-item-into-cart__size-selection-option" type="radio" name="item-size-selection" value="L"></li>
+        <ul class="pop-up__size-selection">
+          <li>
+            <input class="pop-up__size-selection-input" id="selection-input-size-small" type="radio" name="item-size-selection" value="S" checked>
+            <label class="pop-up__size-selection-label" for="selection-input-size-small">S</label>
+          </li>
+          <li>
+            <input class="pop-up__size-selection-input" id="selection-input-size-medium" type="radio" name="item-size-selection" value="M">
+            <label class="pop-up__size-selection-label" for="selection-input-size-medium">M</label>
+          </li>
+          <li>
+            <input class="pop-up__size-selection-input" id="selection-input-size-large" type="radio" name="item-size-selection" value="L">
+            <label class="pop-up__size-selection-label" for="selection-input-size-large">L</label>
+          </li>
         </ul>
         <button type="submit" class="button-pop-up">Добавить</button>
       </form>
