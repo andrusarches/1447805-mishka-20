@@ -11,7 +11,7 @@
         <img src="source/mishka-logo-mobile.svg" alt="Логотип магазина изделий ручной работы «Mishka»">
       </a>
       <nav class="site-navigation">
-        <a href="blank.html" class="hamburger-menu" aria-label="Меню магазина изделий ручной работы «Mishka»"></a>
+        <button type="button" class="hamburger-menu" aria-label="Меню магазина изделий ручной работы «Mishka»"></button>
         <ul class="site-menu">
           <li class="site-menu__element"><a href="catalog.html" class="site-menu__link">Каталог товаров</a></li>
           <li class="site-menu__element"><a href="blank.html" class="site-menu__link">Вязание на заказ</a></li>
@@ -23,46 +23,46 @@
 
     <main class="page-main">
       <section class="catalog">
-        <div class="heading-background">
-          <h1 class="page-heading">Каталог товаров</h1>
+        <div class="page-intro">
+          <h1 class="page-intro__heading">Каталог товаров</h1>
         </div>
         <ul class="catalog__item-list">
           <li class="catalog__item">
             <article class="product-card">
-              <a href="blank.html" class="product-image-link"><img class="product-image" src="img/placeholder.jpg" alt="Фотография товара - Зайчик-попрыгайчик"></a>
-              <div class="product-description">
-                <h3 class="product-name"><a class="link-basic" href="blank.html">Зайчик-попрыгайчик</a></h3>
-                <p class="product-features">Рост 30 см, вес 200 г</p>
+              <a href="blank.html" class="product-card__image-link"><img class="product-card__image" src="img/placeholder.jpg" alt="Фотография товара - Зайчик-попрыгайчик"></a>
+              <div class="product-card__description">
+                <h3 class="product-card__name"><a class="link-basic" href="blank.html">Зайчик-попрыгайчик</a></h3>
+                <p class="product-card__features">Рост 30 см, вес 200 г</p>
               </div>
-              <div class="product-purchase">
-                <p class="product-price"><span>1 200</span> руб.</p>
-                <a class="product-to-cart" href="blank.html" aria-label="Добавить товар в корзину"></a>
-              </div>
-            </article>
-          </li>
-          <li class="catalog__item">
-            <article class="product-card">
-              <a href="blank.html" class="product-image-link"><img class="product-image" src="img/placeholder.jpg" alt="Фотография товара - Корзинка для белья"></a>
-              <div class="product-description">
-                <h3 class="product-name"><a class="link-basic" href="blank.html">Корзинка для белья</a></h3>
-                <p class="product-features">Диаметр 15 см, высота 10 см</p>
-              </div>
-              <div class="product-purchase">
-                <p class="product-price"><span>690</span> руб.</p>
-                <a class="product-to-cart" href="blank.html" aria-label="Добавить товар в корзину"></a>
+              <div class="product-card__purchase">
+                <p class="product-card__price"><span>1 200</span> руб.</p>
+                <a class="product-card__to-cart" href="blank.html" aria-label="Добавить товар в корзину"></a>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="product-card">
-              <a href="blank.html" class="product-image-link"><img class="product-image" src="img/placeholder.jpg" alt="Фотография товара - Большая корзинка для игрушек"></a>
-              <div class="product-description">
-                <h3 class="product-name"><a class="link-basic" href="blank.html">Большая корзинка для игрушек</a></h3>
-                <p class="product-features">Диаметр 30 см, высота 30 см</p>
+              <a href="blank.html" class="product-card__image-link"><img class="product-card__image" src="img/placeholder.jpg" alt="Фотография товара - Корзинка для белья"></a>
+              <div class="product-card__description">
+                <h3 class="product-card__name"><a class="link-basic" href="blank.html">Корзинка для белья</a></h3>
+                <p class="product-card__features">Диаметр 15 см, высота 10 см</p>
               </div>
-              <div class="product-purchase">
-                <p class="product-price"><span>1 500</span> руб.</p>
-                <a class="product-to-cart" href="blank.html" aria-label="Добавить товар в корзину"></a>
+              <div class="product-card__purchase">
+                <p class="product-card__price"><span>690</span> руб.</p>
+                <a class="product-card__to-cart" href="blank.html" aria-label="Добавить товар в корзину"></a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product-card">
+              <a href="blank.html" class="product-card__image-link"><img class="product-card__image" src="img/placeholder.jpg" alt="Фотография товара - Большая корзинка для игрушек"></a>
+              <div class="product-card__description">
+                <h3 class="product-card__name"><a class="link-basic" href="blank.html">Большая корзинка для игрушек</a></h3>
+                <p class="product-card__features">Диаметр 30 см, высота 30 см</p>
+              </div>
+              <div class="product-card__purchase">
+                <p class="product-card__price"><span>1 500</span> руб.</p>
+                <a class="product-card__to-cart" href="blank.html" aria-label="Добавить товар в корзину"></a>
               </div>
             </article>
           </li>
@@ -72,7 +72,7 @@
         <h2 class="video-block__heading">Процесс производства</h2>
         <div class="video">
           <img src="img/placeholder.jpg" alt="Картинка-placeholder под видео">
-          <a href="blank.html" class="video-button" aria-label="Начать проигрывание видео"></a>
+          <button class="video__button" aria-label="Начать проигрывание видео"></button>
         </div>
         <p class="video-block__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="blank.html" class="video-block__button button-basic">Сделать заказ</a>
