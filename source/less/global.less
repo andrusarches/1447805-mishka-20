@@ -1,0 +1,58 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button-basic {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @font-color-primary;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  box-shadow: inset 0 0 0 2px @font-color-primary;
+  margin: 0 auto;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+@media (max-width: @mobile-width) {
+  .button-basic {
+    min-width: 260px;
+  }
+}
+
+.button-basic:hover,
+.button-basic:focus {
+  color: @font-color-secondary;
+  background: linear-gradient(0deg, @font-color-primary, @font-color-primary);
+}
+
+.button-basic:active {
+  color: @font-color-secondary-03;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}

@@ -1,0 +1,127 @@
+@media (min-width: @desktop-width) {
+  .about-us {
+    margin-left: 175px;
+  }
+}
+
+.about-us__heading {
+  font-family: @font-primary;
+  color: @heading-color;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__heading {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__heading {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 68px;
+  }
+}
+
+.about-us__features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+  }
+}
+
+.about-us__feature {
+  margin-top: 83px;
+  position: relative;
+  max-width: 295px;
+}
+
+.about-us__feature::before {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-us__feature--eco::before {
+ background-image: url("../img/icon-eco.svg");
+ width: 32px;
+ height: 37px;
+ top: -50px;
+ left: 0;
+}
+
+.about-us__feature--price::before {
+  background-image: url("../img/icon-bill.svg");
+  width: 47px;
+  height: 27px;
+  top: -50px;
+  left: 0;
+}
+
+.about-us__feature--likes::before {
+  background-image: url("../img/icon-heart.svg");
+  width: 34px;
+  height: 27px;
+  top: -50px;
+  left: 0;
+}
+
+.about-us__feature--love::before {
+  background-image: url("../img/icon-yarn.svg");
+  width: 35px;
+  height: 34px;
+  top: -50px;
+  left: 0;
+}
+
+.about-us__feature--support::before {
+  background-image: url("../img/icon-rocket.svg");
+  width: 55px;
+  height: 23px;
+  top: -50px;
+  left: 0;
+}
+
+.about-us__feature--giftwrap::before {
+  background-image: url("../img/icon-gift.svg");
+  width: 33px;
+  height: 32px;
+  top: -50px;
+  left: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__feature {
+    margin-top: 110px;
+  }
+}
+
+.about-us__feature-text {
+  font-family: @font-primary;
+  color: @heading-color;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__feature-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
