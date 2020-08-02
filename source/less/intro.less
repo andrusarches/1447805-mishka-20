@@ -64,14 +64,6 @@
   padding: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .intro__nav {
-    display: flex;
-    margin: 0;
-    margin-top: auto;
-  }
-}
-
 .intro__nav-item {
   display: block;
 }
@@ -86,7 +78,6 @@
 
 .intro__nav-link {
   text-decoration: none;
-  display: block;
   min-width: 320px;
   min-height: 103px;
   padding-left: 30px;
@@ -142,12 +133,13 @@
 
 @media (min-width: @tablet-width) {
   .intro__nav {
-    position:absolute;
+    position: absolute;
     bottom: 0;
+    display: flex;
   }
 
   .intro__nav-item {
-    position:absolute;
+    position: absolute;
     bottom: 0;
   }
 
