@@ -3,17 +3,21 @@
   flex-direction: column;
   border: 1px solid @border-color-primary;
   margin-top: 30px;
+
   @media (min-width: @tablet-width) {
     margin-top: 53px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 57px;
     flex-direction: row;
     justify-content: space-between;
   }
+
   &:hover {
     box-shadow: 0px 6px 10px fade(@shadow-color-primary, 10%);
   }
+
   &:focus-within {
     box-shadow: 0px 3px 5px fade(@shadow-color-primary, 10%);
   }
@@ -21,9 +25,11 @@
 
 .video-block__info {
   padding: 35px 34px 33px 34px;
+
   @media (min-width: @tablet-width) {
     padding: 39px 42px 46px 42px;
   }
+
   @media (min-width: @desktop-width) {
     width: 366px;
     min-height: 455px;
@@ -35,6 +41,7 @@
 
 .video-block__heading-wrapper {
   display: none;
+
   @media (max-width: @mobile-width) {
     display: block;
     padding: 22px 34px 27px 34px;
@@ -48,6 +55,7 @@
   color: @heading-color;
   margin: 0;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -65,9 +73,11 @@
   max-width: 130px;
   font-size: 17px;
   padding-left: 57px;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
+
   &::before {
     top: 50%;
     left: 0;
@@ -77,22 +87,27 @@
 
 .video-block__heading--fullscreen {
   font-size: 20px;
+
   @media (max-width: @mobile-width) {
     display: none;
   }
+
   @media (min-width: @tablet-width) {
     padding-left: 65px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 0;
     padding-top: 59px;
   }
+
   &::before {
     @media (min-width: @tablet-width) {
       top: 50%;
       left: 0;
       transform: translateY(-50%);
     }
+
     @media (min-width: @desktop-width) {
       top: 0;
       transform: translateY(0%);
@@ -119,11 +134,13 @@
   justify-content: center;
   align-items: center;
   padding: 0;
+
   &:hover,
   &:focus {
     transform: scale(1.2) translate(-40%,-40%);
     transition: transform 0.2s ease-in-out;
   }
+
   &:active {
     transform: scale(0.7) translate(-75%, -75%);
     opacity: 0.3;
@@ -138,11 +155,13 @@
   line-height: 24px;
   margin: 0;
   margin-top: 35px;
+
   @media (min-width: @tablet-width) {
     margin-top: 25px;
     font-size: 15px;
     line-height: 30px;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: 28px;
   }
@@ -152,9 +171,11 @@
   margin-top: auto;
   max-width: 192px;
   margin-top: 41px;
+
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+
   @media (min-width: @desktop-width) {
     margin-top: auto;
   }

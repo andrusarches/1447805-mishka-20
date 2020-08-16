@@ -4,6 +4,18 @@
   align-items: center;
   min-width: 267px;
   background: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
 }
 
 .site-navigation__toggle {
@@ -28,6 +40,7 @@
 
 .site-navigation__menu-element {
   position: relative;
+
   @media (min-width: @tablet-width) {
     min-height: 89px;
     display: flex;
@@ -49,10 +62,12 @@
   padding-left: 76px;
   padding-right: 10px;
   position: relative;
+
   &:hover,
   &:focus {
     color: fade(@heading-color, 60%);
   }
+
   &:active {
     color: fade(@heading-color, 30%);
   }
@@ -118,6 +133,7 @@
 
 ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
   display: none;
+
   @media (min-width: @desktop-width) {
     display: flex;
   }
@@ -206,6 +222,7 @@ ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
       background-color: fade(@hamburger-menu-color, 30%);
     }
   }
+
   ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
     display: none;
   }
@@ -218,6 +235,7 @@ ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
 
 .site-navigation__delivery-options {
   display: none;
+
   @media (min-width: @tablet-width) {
     display: block;
     vertical-align: middle;
@@ -258,13 +276,6 @@ ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
     pointer-events: none;
   }
 
-  .site-navigation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
   .site-navigation__toggle {
     display: none;
   }
@@ -272,19 +283,6 @@ ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
   .site-navigation__menu {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.site-navigation {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
   }
 }
 
@@ -302,6 +300,7 @@ ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
   @media (min-width: @tablet-width) {
     order: 2;
   }
+
   @media (min-width: @desktop-width) {
     order: initial;
   }
@@ -311,6 +310,7 @@ ul.site-navigation__menu.site-navigation__menu--new-arrivals-sales {
   @media (min-width: @tablet-width) {
     margin-left: 30px;
   }
+
   @media (min-width: @desktop-width) {
     position: relative;
     &::before {

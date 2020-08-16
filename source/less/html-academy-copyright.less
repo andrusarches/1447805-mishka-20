@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 22px;
+
   @media (min-width: @tablet-width) {
     margin-top: auto;
     margin-bottom: 51px;
@@ -28,10 +29,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &:hover path,
   &:focus path {
     fill: @decorative-color-dark-active;
   }
+
   &:active path {
     fill: fade(@decorative-color-dark-active, 30%);
   }

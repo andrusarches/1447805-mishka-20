@@ -16,14 +16,17 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
+
   &:hover,
   &:focus {
     color: @font-color-secondary;
     background: linear-gradient(0deg, @font-color-primary, @font-color-primary);
   }
+
   &:active {
     color: fade(@font-color-secondary, 30%);
   }
+
   @media (max-width: @mobile-width) {
     margin: 0 auto;
   }

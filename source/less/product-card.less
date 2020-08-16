@@ -1,10 +1,12 @@
 .product-card {
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
   }
+
   @media (min-width: @desktop-width) {
     flex-direction: column;
     justify-content: flex-start;
@@ -23,10 +25,12 @@
   display: block;
   width: 260px;
   height: 195px;
+
   @media (min-width: @tablet-width) {
     width: 334px;
     height: 334px;
   }
+
   @media (min-width: @desktop-width) {
     width: 316px;
     height: 462px;
@@ -37,10 +41,12 @@
   width: 260px;
   height: 195px;
   background-color: @background-color-secondary;
+
   @media (min-width: @tablet-width) {
     width: 334px;
     height: 334px;
   }
+
   @media (min-width: @desktop-width) {
     width: 316px;
     height: 462px;
@@ -52,12 +58,14 @@
   display: flex;
   flex-direction: column;
   padding: 0 28px;
+
   @media (min-width: @tablet-width) {
     min-height: 334px;
     padding-left: 34px;
     padding-right: 33px;
     width: 335px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 28px;
     padding-right: 32px;
@@ -78,6 +86,7 @@
   color: @heading-color;
   margin: 0;
   margin-top: 29px;
+
   @media (min-width: @tablet-width) {
     margin-top: 27px;
     font-size: 20px;
@@ -92,6 +101,7 @@
   color: @font-color-primary;
   margin: 0;
   margin-top: 6px;
+
   @media (min-width: @tablet-width) {
     font-size: 15px;
     margin-top: 7px;
@@ -105,6 +115,7 @@
   padding-top: 23px;
   margin-bottom: 27px;
   margin-top: auto;
+
   @media (min-width: @tablet-width) {
     padding-top: 24px;
     margin-bottom: 26px;
@@ -118,6 +129,7 @@
   line-height: 24px;
   color: @heading-color;
   margin: 0;
+
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
