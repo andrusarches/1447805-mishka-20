@@ -1,7 +1,9 @@
 .page-header {
-  background-color: @background-color-primary;
   min-height: 79px;
   position: relative;
+  @media (max-width: @mobile-width) {
+    background-color: @background-color-primary;
+  }
 }
 
 .page-header::after {
@@ -11,6 +13,9 @@
   position: absolute;
   background-color: @border-color-primary;
   bottom: 0;
+  @media (min-width: @tablet-width) {
+    top: 88px;
+  }
 }
 
 .page-header__wrapper {
@@ -21,10 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__wrapper {
+  @media (min-width: @tablet-width) {
     width: 770px;
     padding: 0 50px;
     display: flex;
@@ -32,10 +34,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__wrapper {
+  @media (min-width: @desktop-width) {
     width: 1150px;
   }
 }
@@ -44,32 +43,14 @@
   margin: 22px 0;
   position: relative;
   z-index: 10;
-}
-
-.page-header__logo-link[href]:hover,
-.page-header__logo-link[href]:focus {
-  opacity: 0.6;
-}
-
-.page-header__logo-link[href]:active {
-  opacity: 0.3;
-}
-
-@media (max-width: @mobile-width) {
-  .page-header__logo-link::after {
-    content: "";
-    position: absolute;
-    bottom: -22px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 1px;
-    width: 320px;
-    background-color: @border-color-primary;
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__logo-link {
+  &[href]:active {
+    opacity: 0.3;
+  }
+  @media (min-width: @desktop-width) {
     position: absolute;
     top: 0;
     left: 50%;

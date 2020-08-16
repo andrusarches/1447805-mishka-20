@@ -12,18 +12,12 @@
   line-height: 30px;
   margin: 0;
   margin-top: 30px;
-}
-
-@media (min-width: @tablet-width) {
-  .about-us__heading {
+  @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
     margin-top: 50px;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .about-us__heading {
+  @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
     margin-top: 68px;
@@ -34,13 +28,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .about-us__features-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
+  @media (min-width: @tablet-width) {
+    column-count: 2;
+    column-gap: 40px;
   }
 }
 
@@ -48,6 +38,11 @@
   margin-top: 83px;
   position: relative;
   max-width: 295px;
+  display: inline-block;
+  vertical-align: middle;
+  @media (min-width: @tablet-width) {
+    margin-top: 110px;
+  }
 }
 
 .about-us__feature::before {
@@ -105,23 +100,14 @@
   left: 0;
 }
 
-@media (min-width: @tablet-width) {
-  .about-us__feature {
-    margin-top: 110px;
-  }
-}
-
 .about-us__feature-text {
   font-family: @font-primary;
   color: @heading-color;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-}
-
-@media (min-width: @tablet-width) {
-  .about-us__feature-text {
-    font-size: 20px;
-    line-height: 22px;
+  @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 22px;
   }
 }

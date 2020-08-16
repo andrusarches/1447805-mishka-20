@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-@media (min-width: @desktop-width) {
-  .reviews {
+  @media (min-width: @desktop-width) {
     margin-left: 175px;
   }
 }
@@ -18,17 +15,11 @@
   line-height: 30px;
   margin: 0;
   margin-top: 30px;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__heading {
+  @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__heading {
+  @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -47,33 +38,21 @@
   font-size: 15px;
   line-height: 30px;
   margin: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__text {
+  @media (min-width: @tablet-width) {
     font-size: 17px;
     margin-top: 39px;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__text {
+  @media (min-width: @desktop-width) {
     margin-top: 35px;
   }
 }
 
 .reviews__author {
   margin-top: 33px;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__author {
+  @media (min-width: @tablet-width) {
     margin-top: 61px;
   }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__author {
+  @media (min-width: @desktop-width) {
     margin-top: 44px;
   }
 }
@@ -105,10 +84,7 @@
   margin: 0;
   margin-top: 30px;
   padding: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__arrrows-list {
+  @media (min-width: @tablet-width) {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -144,20 +120,19 @@
   padding-left: 42px;
   padding-right: 38px;
   position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    height: 50px;
+    width: 1px;
+    background-color: @border-color-primary;
+  }
 }
 
 .reviews__arrrow--next {
   padding-left: 38px;
   padding-right: 42px;
-}
-
-.reviews__arrrow--previous::after {
-  content: "";
-  position: absolute;
-  right: -1px;
-  height: 50px;
-  width: 1px;
-  background-color: @border-color-primary;
 }
 
 @media (min-width: @tablet-width) {
@@ -178,10 +153,7 @@
 .reviews__review-submission {
   width: 100%;
   margin-top: 38px;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__review-submission {
+  @media (min-width: @tablet-width) {
     width: 175px;
     position: absolute;
     top: 0;

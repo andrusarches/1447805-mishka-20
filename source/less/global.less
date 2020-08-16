@@ -16,41 +16,17 @@ img {
   overflow: hidden;
 }
 
-.button-basic {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: @font-color-primary;
-  text-align: center;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 20px;
-  box-shadow: inset 0 0 0 2px @font-color-primary;
+.content-wrapper {
+  width: 320px;
+  padding: 0 30px;
   margin: 0 auto;
-  vertical-align: middle;
-  border: none;
-  outline: none;
-  min-height: 52px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-}
-
-@media (max-width: @mobile-width) {
-  .button-basic {
-    min-width: 260px;
+  @media (min-width: @tablet-width) {
+    width: 770px;
+    padding: 0 50px;
   }
-}
-
-.button-basic:hover,
-.button-basic:focus {
-  color: @font-color-secondary;
-  background: linear-gradient(0deg, @font-color-primary, @font-color-primary);
-}
-
-.button-basic:active {
-  color: @font-color-secondary-03;
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+  }
 }
 
 *,
