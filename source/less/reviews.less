@@ -1,0 +1,172 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+  }
+}
+
+.reviews__heading {
+  font-family: @font-primary;
+  color: @heading-color;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  font-family: @font-primary;
+  color: @font-color-primary;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    margin-top: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 35px;
+  }
+}
+
+.reviews__author {
+  margin-top: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 44px;
+  }
+}
+
+.reviews__author-name {
+  font-family: @font-primary;
+  color: @heading-color;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.reviews__author-contact {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.reviews__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__arrrows-list {
+  list-style: none;
+  display: flex;
+  box-shadow: inset 0 0 0 1px @border-color-primary;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    box-shadow: none;
+  }
+}
+
+.reviews__arrrows-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews__arrrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.reviews__arrrow:hover svg,
+.reviews__arrrow:focus svg {
+  opacity: 0.6;
+}
+
+.reviews__arrrow:active svg {
+  opacity: 0.3;
+}
+
+.reviews__arrrow--previous {
+  padding-left: 42px;
+  padding-right: 38px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    height: 50px;
+    width: 1px;
+    background-color: @border-color-primary;
+  }
+}
+
+.reviews__arrrow--next {
+  padding-left: 38px;
+  padding-right: 42px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__arrrow--previous::after {
+    display: none;
+  }
+
+  .reviews__arrrow--previous {
+    padding: 0;
+    margin-right: 37px;
+  }
+
+  .reviews__arrrow--next {
+    padding: 0;
+  }
+}
+
+.reviews__review-submission {
+  width: 100%;
+  margin-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.button-basic {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @font-color-primary;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  box-shadow: inset 0 0 0 2px @font-color-primary;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: @font-color-secondary;
+    background: linear-gradient(0deg, @font-color-primary, @font-color-primary);
+  }
+
+  &:active {
+    color: fade(@font-color-secondary, 30%);
+  }
+
+  @media (max-width: @mobile-width) {
+    margin: 0 auto;
+  }
+}

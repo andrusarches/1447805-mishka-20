@@ -1,0 +1,41 @@
+.html-academy-copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+    margin-bottom: 51px;
+  }
+}
+
+.html-academy-copyright__developed-by {
+  font-family: @font-primary;
+  color: @heading-color;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.html-academy-copyright__link {
+  line-height: 0;
+  margin-left: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover path,
+  &:focus path {
+    fill: @decorative-color-dark-active;
+  }
+
+  &:active path {
+    fill: fade(@decorative-color-dark-active, 30%);
+  }
+}
