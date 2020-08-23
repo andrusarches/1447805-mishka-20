@@ -1,14 +1,16 @@
-var navMain = document.querySelector('.site-navigation');
-var navToggle = document.querySelector('.site-navigation__toggle');
+var pageHeader = document.querySelector('.page-header');
+var navMain = document.querySelector('.page-header__nav');
+var navToggle = document.querySelector('.page-header__toggler');
 
-navMain.classList.remove('site-navigation--nojs');
+pageHeader.classList.remove('page-header--nojs');
 
 navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('site-navigation--closed')) {
-    navMain.classList.remove('site-navigation--closed');
-    navMain.classList.add('site-navigation--opened');
+  navToggle.classList.toggle('page-header__toggler--is-active');
+  if (navMain.classList.contains('page-header__nav--closed')) {
+    navMain.classList.remove('page-header__nav--closed');
+    navMain.classList.add('page-header__nav--opened');
   } else {
-    navMain.classList.add('site-navigation--closed');
-    navMain.classList.remove('site-navigation--opened');
+    navMain.classList.add('page-header__nav--closed');
+    navMain.classList.remove('page-header__nav--opened');
   }
 });
