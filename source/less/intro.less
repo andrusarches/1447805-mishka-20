@@ -203,20 +203,20 @@
 }
 
 .intro__nav-link-wrapper {
+  @media (max-width: @mobile-width) {
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    padding: 0 30px;
+  }
+
   &::after {
     position: absolute;
     content: "";
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.5;
-  }
-
-  @media (max-width: @mobile-width) {
-      width: 320px;
-      margin: 0 auto;
-      position: relative;
-      display: block;
-      padding: 0 30px;
   }
 
   &--interior::after {
