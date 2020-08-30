@@ -3,6 +3,38 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 131px;
+    margin-left: 175px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 6px;
+    bottom: -30px;
+    left: -30px;
+
+    @media (min-width: @tablet-width) {
+      width: 772px;
+      height: 17px;
+      background-size: auto 17px;
+      left: -50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1050px;
+      height: 21px;
+      background-size: auto 21px;
+      background-position: left 0px center;
+      left: -175px;
+      bottom: -95px;
+    }
+  }
 }
 
 .product-promo__name {
@@ -19,8 +51,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -40,6 +72,13 @@
     display: block;
     max-width: 72px;
     text-align: center;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: -129px;
+    top: 8px;
+    position: absolute;
   }
 }
 
@@ -51,18 +90,39 @@
   color: @font-color-primary;
   margin: 0;
   margin-top: 18px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 292px;
+    margin-top: 37px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 36px;
+  }
 }
 
 .product-promo__features {
-  border-collapse: collapse;
+  // border-collapse: collapse;
   border-spacing: 5px 5px;
   margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 292px;
+    margin-top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .product-promo__feature {
   border-bottom: 1px solid @border-color-primary;
-  padding: 5px 0;
+  padding-bottom: 10px;
   display: block;
+  margin-left: -10px;
 }
 
 .product-promo__feature-type {
@@ -71,9 +131,9 @@
   font-size: 15px;
   line-height: 20px;
   color: @font-color-primary;
-  min-width: 92px;
+  min-width: 93px;
   text-align: left;
-  pading: 0;
+  padding: 0;
 }
 
 .product-promo__feature-value {
@@ -93,41 +153,36 @@
   line-height: 24px;
   color: @font-color-primary;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    max-width: 292px;
+    margin-top: 57px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 103px;
+  }
 }
 
 .product-promo__order {
   width: 100%;
-}
 
-.product-promo__image {
-  margin-top: 28px;
-}
-
-@media (min-width: @tablet-width) {
-  .product-promo__description {
-    max-width: 292px;
-    margin-top: 37px;
-  }
-
-  .product-promo__features {
-    max-width: 292px;
-    margin-top: 48px;
-  }
-
-  .product-promo__price {
-    display: block;
-    max-width: 292px;
-    margin-top: 57px;
-  }
-
-  .product-promo__order {
+  @media (min-width: @tablet-width) {
     max-width: 292px;
     margin-right: auto;
     margin-left: 0;
     margin-top: 33px;
   }
+}
 
-  .product-promo__image {
+.product-promo__image {
+  margin-top: 28px;
+
+  @media (min-width: @tablet-width) {
     position: absolute;
     overflow: hidden;
     max-width: 333px;
@@ -135,47 +190,18 @@
     right: 0;
     margin: 0;
     z-index: -1;
-    top: 50px;
+    bottom: 0;
   }
 
-  .product-promo__promo-headings {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .product-promo__description {
-    margin-top: 35px;
-  }
-
-  .product-promo {
-    margin-top: 115px;
-    margin-left: 175px;
-  }
-
-  .product-promo__image {
-    top: 0;
+  @media (min-width: @desktop-width) {
     max-width: 525px;
     max-height: 636px;
   }
+}
 
-  .product-promo__name {
-    font-size: 53px;
-    line-height: 57px;
-  }
-
-  .product-promo__features {
-    margin-top: 60px;
-  }
-
-  .product-promo__promo-name {
-    left: -139px;
-    top: 0;
-    position: absolute;
-  }
-
-  .product-promo__price {
-    margin-top: 109px;
+.product-promo__promo-headings {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -86,7 +86,7 @@
       width: 50%;
 
       & .site-nav__menu-element {
-        margin-top: 29px;
+        margin-top: 32px;
       }
 
       & .site-nav__menu-element:not(:last-of-type) {
@@ -152,6 +152,7 @@
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
+    fill: fade(@decorative-color-icon, 20%);
   }
 
   &--cart svg {
@@ -159,17 +160,18 @@
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
+    fill: fade(@decorative-color-icon, 20%);
   }
 
-  &--search:hover path,
-  &--search:focus path,
-  &--cart:hover path,
-  &--cart:focus path {
+  &--search:hover svg,
+  &--search:focus svg,
+  &--cart:hover svg,
+  &--cart:focus svg {
     fill: @decorative-color-light;
   }
 
-  &--search:active path,
-  &--cart:active path {
+  &--search:active svg,
+  &--cart:active svg {
     fill: fade(@decorative-color-light, 30%);
   }
 
@@ -238,7 +240,7 @@
   line-height: 24px;
   text-align: right;
   text-decoration: none;
-  margin-top: 17px;
+  margin-top: 20px;
 
   &:hover,
   &:focus {

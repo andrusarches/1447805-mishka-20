@@ -1,5 +1,27 @@
 .page-intro {
   background-color: @background-color-secondary;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      width: 100%;
+      content: "";
+      bottom: -8px;
+      left: 0;
+      height: 24px;
+      background-size: auto 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      height: 34px;
+      bottom: -17px;
+      background-size: auto 34px;
+    }
+  }
 }
 
 .page-intro__wrapper {

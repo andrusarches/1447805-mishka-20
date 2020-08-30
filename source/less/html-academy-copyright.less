@@ -30,12 +30,16 @@
   justify-content: center;
   align-items: center;
 
-  &:hover path,
+  & svg {
+    fill: @decorative-color-light;
+  }
+
+  &:hover svg,
   &:focus path {
     fill: @decorative-color-dark-active;
   }
 
-  &:active path {
+  &:active svg {
     fill: fade(@decorative-color-dark-active, 30%);
   }
 }

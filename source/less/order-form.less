@@ -351,10 +351,6 @@
     @media (min-width: @tablet-width) {
       font-size: 19px;
     }
-
-    @media (min-width: @desktop-width) {
-      color: @font-color-primary;
-    }
   }
 
   &:hover,
@@ -370,6 +366,32 @@
   &--visible-label {
     @media (min-width: @tablet-width) {
       margin-left: 23px;
+    }
+  }
+
+  &--phone-number {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 24px;
+    background-position: center right 3px;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-phone-active.svg");
+    }
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 32px 32px;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-mail-active.svg");
     }
   }
 }

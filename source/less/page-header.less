@@ -70,6 +70,7 @@
   @media (min-width: @desktop-width) {
     left: 50%;
     transform: translateX(-50%);
+    top: 9px;
   }
 }
 
@@ -179,4 +180,19 @@
 
 .page-header__wrapper--nojs .page-header__toggler {
   display: none;
+}
+
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 149px;
+  }
 }

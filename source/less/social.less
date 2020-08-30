@@ -4,6 +4,11 @@
   align-items: center;
   position: relative;
 
+  @media (min-width: @desktop-width) {
+    margin-left: -77px;
+    margin-top: -5px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -49,12 +54,16 @@
   justify-content: center;
   line-height: 0;
 
-  &:hover path,
-  &:focus path {
+  & svg {
+    fill: @decorative-color-icon;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: @decorative-color-dark-active;
   }
 
-  &:active path {
+  &:active svg {
     fill: fade(@decorative-color-dark-active, 30%);
   }
 }

@@ -1,6 +1,7 @@
 .about-us {
   @media (min-width: @desktop-width) {
     margin-left: 175px;
+    margin-top: 164px;
   }
 }
 
@@ -34,6 +35,8 @@
   @media (min-width: @tablet-width) {
     column-count: 2;
     column-gap: 40px;
+    max-width: 660px;
+    margin-top: 5px;
   }
 }
 
@@ -45,63 +48,65 @@
   vertical-align: middle;
 
   @media (min-width: @tablet-width) {
-    margin-top: 110px;
+    margin-top: 72px;
   }
-}
 
-.about-us__feature::before {
-  position: absolute;
-  content: "";
-  background-repeat: no-repeat;
-  background-position: center;
-}
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -33px;
+    left: 0;
+  }
 
-.about-us__feature--eco::before {
-  background-image: url("../img/icon-eco.svg");
-  width: 32px;
-  height: 37px;
-  top: -50px;
-  left: 0;
-}
+  &--eco::before {
+    background-image: url("../img/icon-eco.svg");
+    width: 32px;
+    height: 37px;
+    top: -37px;
+    left: 9px;
+  }
 
-.about-us__feature--price::before {
-  background-image: url("../img/icon-bill.svg");
-  width: 47px;
-  height: 27px;
-  top: -50px;
-  left: 0;
-}
+  &--price::before {
+    background-image: url("../img/icon-bill.svg");
+    width: 47px;
+    height: 27px;
+    top: -35px;
+  }
 
-.about-us__feature--likes::before {
-  background-image: url("../img/icon-heart.svg");
-  width: 34px;
-  height: 27px;
-  top: -50px;
-  left: 0;
-}
+  &--likes::before {
+    background-image: url("../img/icon-heart.svg");
+    width: 34px;
+    height: 27px;
+    left: 0;
+    top: -31px;
+    left: 8px;
+  }
 
-.about-us__feature--love::before {
-  background-image: url("../img/icon-yarn.svg");
-  width: 35px;
-  height: 34px;
-  top: -50px;
-  left: 0;
-}
+  &--love::before {
+    background-image: url("../img/icon-yarn.svg");
+    width: 35px;
+    height: 34px;
+    top: -33px;
+    left: 3px;
+  }
 
-.about-us__feature--support::before {
-  background-image: url("../img/icon-rocket.svg");
-  width: 55px;
-  height: 23px;
-  top: -50px;
-  left: 0;
-}
+  &--support::before {
+    background-image: url("../img/icon-rocket.svg");
+    width: 55px;
+    height: 23px;
+    top: -33px;
+    left: -6px;
+  }
 
-.about-us__feature--giftwrap::before {
-  background-image: url("../img/icon-gift.svg");
-  width: 33px;
-  height: 32px;
-  top: -50px;
-  left: 0;
+  &--giftwrap::before {
+    background-image: url("../img/icon-gift.svg");
+    width: 33px;
+    height: 32px;
+    left: 3px;
+    top: -35px;
+  }
 }
 
 .about-us__feature-text {

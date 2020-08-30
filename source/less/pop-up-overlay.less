@@ -1,0 +1,14 @@
+.pop-up-overlay {
+  display: none;
+  z-index: 101;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: fade(@background-color-primary, 90%);
+  top: 0;
+  left: 0;
+
+  &--active {
+    display: block;
+  }
+}
