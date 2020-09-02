@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Вязание на заказ - магазин изделий ручной работы «Mishka»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page-header page-header--nojs">
@@ -79,7 +79,7 @@
         </div>
         <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="order-form__wrapper">
-            <fieldset class="order-form__fieldset">
+            <fieldset class="order-form__fieldset order-form__fieldset--radio">
               <legend class="order-form__legend order-form__legend--type">Тип</legend>
               <input class="order-form__input-hidden order-form__input-radio" type="radio" id="interior-accessory" name="custom-item-type" value="interior-accessory" checked>
               <label class="order-form__label order-form__label--radio" for="interior-accessory">Аксессуар для интерьера</label>
@@ -88,7 +88,7 @@
             </fieldset>
           </div>
           <div class="order-form__wrapper-background">
-            <div class="order-form__wrapper">
+            <div class="order-form__wrapper order-form__wrapper--color">
               <fieldset class="order-form__fieldset">
                 <legend class="order-form__legend order-form__legend--color">Цвет</legend>
                 <ul class="order-form__list">
@@ -120,12 +120,12 @@
               </fieldset>
             </div>
           </div>
-          <div class="order-form__wrapper">
+          <div class="order-form__wrapper order-form__wrapper--name">
             <fieldset class="order-form__fieldset">
               <legend class="order-form__legend order-form__legend--customer-name">ФИО</legend>
               <label class="order-form__label order-form__label--text" for="custom-order-name">
                 Имя:
-                <input class="order-form__input-text order-form__input-text--visible-label" type="text" id="custom-order-name" name="custom-order-name" placeholder="Укажите имя*" required>
+                <input class="order-form__input-text order-form__input-text--visible-label" type="text" id="custom-order-name" name="custom-order-name" placeholder="Введите ваше имя*" required>
               </label>
               <label class="order-form__label order-form__label--text" for="custom-order-surname">
                 Фамилия:
@@ -138,8 +138,8 @@
             </fieldset>
           </div>
           <div class="order-form__wrapper-background">
-            <div class="order-form__wrapper">
-              <fieldset class="order-form__fieldset">
+            <div class="order-form__wrapper order-form__wrapper--phone-email">
+              <fieldset class="order-form__fieldset order-form__fieldset--phone-number">
                 <legend class="order-form__legend order-form__legend--phone-email">Тел</legend>
                 <label class="visually-hidden" for="custom-order-phone-number">Поле ввода телефонного номера</label>
                 <input class="order-form__input-text order-form__input-text--phone-number" type="text" id="custom-order-phone-number" name="custom-order-phone-number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -151,7 +151,7 @@
               </fieldset>
             </div>
           </div>
-          <div class="order-form__wrapper">
+          <div class="order-form__wrapper order-form__wrapper--comment">
             <fieldset class="order-form__fieldset">
               <legend class="order-form__legend order-form__legend--comment">Доп</legend>
               <label class="visually-hidden" for="custom-order-comment">Поле ввода комментария к заказу</label>
@@ -208,5 +208,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

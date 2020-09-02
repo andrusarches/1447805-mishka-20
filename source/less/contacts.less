@@ -1,9 +1,9 @@
 .contacts {
   position: relative;
-  margin-top: 50px;
+  margin-top: 89px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 100px;
+    margin-top: 202px;
   }
 
   @media (min-width: @desktop-width) {
@@ -31,7 +31,7 @@
   font-family: @font-primary;
   color: @heading-color;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 30px;
   margin: 0;
   margin-top: 30px;
@@ -49,8 +49,8 @@
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: top left;
-      top: -30px;
-      right: 0;
+      top: -23px;
+      right: 4px;
     }
   }
 
@@ -66,19 +66,22 @@
 }
 
 .contacts__table {
-  border-spacing: 25px 30px;
-  margin-top: -30px;
-  margin-left: -51px;
+  border-spacing: 30px 31px;
+  margin-top: -2px;
+  margin-left: -32px;
 
   @media (min-width: @tablet-width) {
-    border-spacing: 20px 30px;
-    margin-left: -31px;
+    border-collapse: collapse;
+    margin: 0;
+    margin-top: 49px;
   }
 
   @media (min-width: @desktop-width) {
+    border-collapse: separate;
     margin-top: -23px;
     border-spacing: 25px 30px;
     margin-left: -51px;
+    margin-bottom: -17px;
   }
 
   & tbody {
@@ -90,6 +93,18 @@
 
     @media (min-width: @desktop-width) {
       display: block;
+    }
+  }
+}
+
+.contacts__element {
+  &:not(:last-of-type) {
+    @media (min-width: @tablet-width) {
+      margin-right: 49px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
     }
   }
 }
@@ -106,6 +121,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    megin: 0;
+    display: table-cell;
   }
 }
 
@@ -122,14 +143,26 @@
   @media (min-width: @tablet-width) {
     max-width: 230px;
     font-size: 17px;
+    margin-left: 22px;
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    megin: 0;
+    display: table-cell;
   }
 }
 
 .contacts__map {
   position: relative;
-  min-height: 457px;
-  margin-top: 28px;
+  min-height: 454px;
+  margin-top: 3px;
   overflow: hidden;
+
+  @media (min-width: @tablet-width) {
+    min-height: 456px;
+    margin-top: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 527px;
@@ -149,24 +182,30 @@
 }
 
 .contacts__google-maps {
-  min-height: 457px;
+  min-height: 454px;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    min-height: 456px;
+  }
 }
 
 .contacts__feedback-button {
-  margin-top: 26px;
+  margin-top: 42px;
   width: 100%;
 
   @media (min-width: @tablet-width) {
     max-width: 230px;
+    margin-top: 56px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
     margin-right: auto;
+    margin-top: 42px;
   }
 }
 

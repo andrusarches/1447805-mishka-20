@@ -7,19 +7,21 @@
       position: absolute;
       width: 100%;
       content: "";
-      bottom: -8px;
+      bottom: 0;
       left: 0;
-      height: 24px;
-      background-size: auto 24px;
+      height: 23px;
+      background-size: auto 23px;
+      background-position: left -16px center;
       background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
 
   @media (min-width: @desktop-width) {
     &::after {
-      height: 34px;
-      bottom: -17px;
-      background-size: auto 34px;
+      height: 37px;
+      bottom: -19px;
+      background-size: auto 37px;
+      background-position: left 10px center;
     }
   }
 }
@@ -42,7 +44,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1150px;
-    min-height: 272px;
+    min-height: 259px;
   }
 }
 
@@ -57,10 +59,12 @@
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 101px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin: auto;
   }
 }

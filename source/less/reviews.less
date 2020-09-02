@@ -3,9 +3,16 @@
   flex-direction: column;
   position: relative;
 
+  @media (max-width: @mobile-width) {
+    margin-top: 42px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 146px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-left: 175px;
-    margin-top: 116px;
   }
 
   &::before {
@@ -15,8 +22,8 @@
       z-index: -1;
       width: 350px;
       height: 457px;
-      left: -50px;
-      top: -30px;
+      left: -49px;
+      top: -84px;
       background-image: url("../img/review@1x.jpg");
       background-repeat: no-repeat;
       background-position: left center;
@@ -29,7 +36,7 @@
 
     @media (min-width: @desktop-width) {
       left: -175px;
-      top: -48px;
+      top: -78px;
     }
   }
 
@@ -40,7 +47,7 @@
     height: 6px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: auto 6px;
-    bottom: -30px;
+    bottom: -52px;
     left: -30px;
 
     @media (min-width: @tablet-width) {
@@ -48,6 +55,7 @@
       height: 17px;
       background-size: auto 17px;
       left: -50px;
+      bottom: -133px;
     }
 
     @media (min-width: @desktop-width) {
@@ -68,7 +76,6 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
-  margin-top: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -94,6 +101,7 @@
   font-size: 15px;
   line-height: 30px;
   margin: 0;
+  margin-top: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
@@ -106,10 +114,10 @@
 }
 
 .reviews__author {
-  margin-top: 33px;
+  margin-top: 35px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 61px;
+    margin-top: 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -124,11 +132,19 @@
   font-size: 17px;
   line-height: 24px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-contact {
   margin: 0;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .reviews__navigation {
@@ -147,8 +163,8 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 15px;
+    right: 20px;
     box-shadow: none;
   }
 
@@ -224,7 +240,12 @@
   @media (min-width: @tablet-width) {
     width: 175px;
     position: absolute;
-    top: -7px;
+    top: -4px;
+    margin: 0;
     right: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
   }
 }

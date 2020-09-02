@@ -1,11 +1,16 @@
 .html-academy-copyright {
   display: flex;
   justify-content: center;
-  margin-top: 22px;
+  margin-top: 50px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 48px;
+    margin-bottom: auto;
+  }
+
+  @media (min-width: @desktop-width) {
     margin-top: auto;
-    margin-bottom: 51px;
+    margin-bottom: 59px;
   }
 }
 
@@ -29,6 +34,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 2px;
+    margin-left: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 29px;
+  }
 
   & svg {
     fill: @decorative-color-light;

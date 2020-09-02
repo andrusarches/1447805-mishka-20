@@ -1,7 +1,17 @@
+.custom-order {
+  @media (min-width: @desktop-width) {
+    margin-bottom: -56px;
+  }
+}
+
 .custom-order__wrapper {
   width: 320px;
   padding: 0 30px;
   margin: 0 auto;
+
+  @media (max-width: @mobile-width) {
+    // margin-bottom: 41px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 770px;
@@ -30,6 +40,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 99px;
+    margin-top: 111px;
   }
 }
