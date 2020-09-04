@@ -1,8 +1,8 @@
-var pageHeader = document.querySelector(".page-header");
+var pageBody = document.querySelector(".page-body");
 var navMain = document.querySelector(".page-header__nav");
 var navToggle = document.querySelector(".page-header__toggler");
 
-pageHeader.classList.remove("page-header--nojs");
+pageBody.classList.remove("page-body--nojs");
 
 navToggle.addEventListener("click", function() {
   navToggle.classList.toggle("page-header__toggler--is-active");

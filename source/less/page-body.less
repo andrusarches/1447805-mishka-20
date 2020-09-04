@@ -1,0 +1,18 @@
+.page-body {
+  min-height: 100%;
+  margin: 0;
+  background-color: @background-color-primary;
+  color: @font-color-primary;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-body--nojs .page-header__toggler {
+  display: none;
+}
+
+.page-body--nojs .page-header__nav--closed {
+  @media (max-width: @mobile-width) {
+    display: block;
+  }
+}
